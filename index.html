@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptar y Desencriptar</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="logo">
+                <span class="logo-text">a</span>
+            </div>
+            <textarea id="input-text" rows="10" cols="50" placeholder="Ingrese su mensaje"></textarea>
+            <p class="note">ⓘ Solo letras minúsculas y sin acentos</p>
+            <div class="buttons">
+                <button id="encrypt-btn" class="btn1">Encriptar</button>
+                <button id="decrypt-btn" class="btn2">Desencriptar</button>
+                <button id="clear-btn" class="btn3">Nuevo</button> 
+            </div>
+
+            <div class="encryption-keys hidden">
+                <h3>Llaves de Encriptación</h3>
+                <ul>
+                    <li>La letra "e" es convertida para "enter"</li>
+                    <li>La letra "i" es convertida para "imes"</li>
+                    <li>La letra "a" es convertida para "ai"</li>
+                    <li>La letra "o" es convertida para "ober"</li>
+                    <li>La letra "u" es convertida para "ufat"</li>
+                </ul>
+            </div>
+            
+
+        </div>
+
+        <div class="right-panel">
+            <img src="img/img1.png" alt="Illustration" class="illustration">
+            <textarea class="text" id="output-text" rows="10" cols="50" readonly placeholder="Ingrese el texto que deseas encriptar o desencriptar."></textarea>
+            <button id="copy-btn" class="btn4">Copiar</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

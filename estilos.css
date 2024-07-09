@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f3fa;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    padding: 20px;
+}
+
+.left-panel {
+    flex: 3;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 50px;
+    color: #002f6c;
+}
+
+textarea {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: #f0f3fa;
+    resize: none;
+    border-radius: 15px;
+    color: #0A3871;
+}
+
+.text {
+    text-align: center;
+    color: black;
+}
+
+.note {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+button.encrypt {
+    background-color: #002f6c;
+    color: white;
+}
+
+button.decrypt {
+    background-color:white;
+    border: 2px solid #002f6c;
+    color: #002f6c;
+}
+
+/* Resto de estilos existentes */
+
+.btn1 {
+    flex: 1;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #143252;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+    text-align: center;
+}
+
+.btn2 {
+    flex: 1;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #143252;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+    text-align: center;
+}
+
+.btn3 {
+    flex: 1;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 2px solid;
+    background-color: transparent;
+    color: #143252;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+    text-align: center;
+}
+
+.btn4 {
+    flex: 1;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 2px solid;
+    background-color: transparent;
+    color: #143252;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+    text-align: center;
+}
+
+.btn1:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón por encima */
+}
+
+.btn2:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón por encima */
+}
+
+.btn3:hover {
+    background-color: #a3d4f5; /* Color de fondo al pasar el ratón por encima */
+}
+
+.btn4:hover {
+    background-color: #a3d4f5; /* Color de fondo al pasar el ratón por encima */
+}
+
+#copy-btn {
+    padding: 15px 50px; /* Ajusta el padding para hacer el botón más ancho */
+}
+
+.right-panel {
+    flex: 1;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.right-panel img {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.message {
+    margin-top: 20px;
+}
+
+.message h2 {
+    font-size: 18px;
+    color: #7d8897;
+}
+
+.message p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Estilos para tamaños de pantalla más pequeños (móviles) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Apilar paneles en pantallas pequeñas */
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    button {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .left-panel, .right-panel {
+        flex: 1; /* Ocupar todo el ancho disponible */
+        padding: 10px; /* Reducir el espacio entre elementos */
+    }
+
+    textarea {
+        height: 200px; /* Ajustar altura del textarea */
+    }
+
+    button {
+        margin-bottom: 10px; /* Espaciado inferior entre botones */
+    }
+}
